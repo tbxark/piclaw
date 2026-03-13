@@ -1,0 +1,34 @@
+{
+  "ai": {
+    "provider": "anthropic",
+    "model": "claude-3-5-sonnet-20241022",
+    "apiKey": "",
+    "baseURL": ""
+  },
+  "session": {
+    "provider": "memory"
+  },
+  "telegram": {
+    "enabled": false,
+    "token": "",
+    "allowedUsers": []
+  },
+  "wecom": {
+    "enabled": false,
+    "botId": "",
+    "secret": ""
+  },
+  "console": {
+    "enabled": true
+  },
+  "tools": {
+    "read": true,
+    "write": true,
+    "bash": true,
+    "bashAllowedCommands": []
+  },
+  "skills": {
+    "enabled": true,
+    "dirs": []
+  }
+}
