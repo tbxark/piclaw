@@ -66,6 +66,9 @@ export class WeComAdapter implements IAdapter {
       if (!body || !body.text?.content)
         return
 
+      // Debug: output raw message format
+      logger.debug({ raw: body }, 'WeCom raw message')
+
       const chatId = body.msgid
       const userId = body.from.userid
 

@@ -26,11 +26,6 @@ export interface Config {
     secret: string
   }
 
-  // Console Configuration
-  console: {
-    enabled: boolean
-  }
-
   // Tools Configuration
   tools: {
     read: boolean

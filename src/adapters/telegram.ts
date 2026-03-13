@@ -63,6 +63,9 @@ export class TelegramAdapter implements IAdapter {
 
         const text = msg.text || msg.caption || ''
 
+        // Debug: output raw message format
+        logger.debug({ raw: msg }, 'Telegram raw message')
+
         const unifiedMsg: UnifiedMessage = {
           id: `tg-${msg.message_id}`,
           chatId: msg.chat.id.toString(),
